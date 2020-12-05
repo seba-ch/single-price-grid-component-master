@@ -1,0 +1,142 @@
+/*-------------------Estilos Generales-------------------*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 58%, 55%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--light-gray);
+  height: 100vh;
+}
+
+.main-container {
+  width: 300px;
+  height: 80vh;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.first-content,
+.second-content,
+.third-content {
+  padding: 30px;
+}
+
+.first-content,
+.third-content {
+  padding-right: 60px;
+}
+
+.main-title,
+.secondary-title {
+  margin-top: 0;
+}
+
+.secondary-title {
+  font-size: 18px;
+}
+
+/*-------------------1er Contenedor-------------------*/
+
+.first-content {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.main-title {
+  color: var(--cyan);
+  font-size: 20px;
+}
+
+.first-content__title {
+  color: var(--bright-yellow);
+}
+
+.first-content__paragraph {
+  margin-bottom: 0;
+  color: var(--grayish-blue);
+}
+
+/*-------------------2do Contenedor-------------------*/
+
+.second-content {
+  background-color: var(--cyan);
+}
+
+.second-content__title,
+.second-content__price,
+.second-content__link {
+  color: #fff;
+}
+
+.second-content__subtitle {
+  color: var(--light-cyan);
+}
+
+.second-content__price {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.second-content__paragraph {
+  color: var(--light-gray);
+}
+
+.second-content__link {
+  text-decoration: none;
+  display: block;
+  background-color: var(--bright-yellow);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 26px;
+}
+
+/*-------------------3er Contenedor-------------------*/
+
+.third-content {
+  background-color: var(--light-cyan);
+  border-radius: 0 0 5px 5px;
+}
+
+.third-content__title {
+  color: #fff;
+}
+
+.third-content__list {
+  color: var(--light-gray);
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/*-------------------Media Quaries-------------------*/
+
+@media screen and (min-width: 1000px) {
+  .main-container {
+    width: 600px;
+    height: 400px;
+  }
+  .first-content {
+    height: 40%;
+  }
+  .secondary-container {
+    display: flex;
+    height: 60%;
+  }
+  .second-content,
+  .third-content {
+    width: 50%;
+  }
+}
